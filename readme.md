@@ -12,12 +12,12 @@ This lab will focus on data cleaning and wrangling, this is a crucial step in th
 2. Create a copy of the dataframe for the data wrangling.
 3. Normalize the continuous variables.
 4. Encode the categorical variables
-5. Transform the time variables (day, week and month) to integers.
+5. Transform the time variables (`day`, `week` and `month`) to integers.
 6. Since the model will only accept numerical data, check and make sure that every column is numerical, if some are not, change it using encoding.
 
 **Hint for Categorical Variables**
 
-- Use either encoding or get_dummies to deal with the categorical variables (example below):
+- Use either encoding or `get_dummies` to deal with the categorical variables (example below):
 
 ```python
 data["coverage"] = data["coverage"].map({"Basic" : 0, "Extended" : 1, "Premium" : 2})
